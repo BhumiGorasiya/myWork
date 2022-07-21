@@ -1,0 +1,30 @@
+package function;
+
+import java.util.Scanner;
+
+//Write a Java method to count all words in a string. Go to the editor.
+// with return type and with parameter
+
+public class task_7 {
+	public static void main(String[] args) {
+		String name = "The quick brown fox jumps over the lazy dog";
+		System.out.println(words(name)+"Number of words in the string :");
+				
+	}
+
+	
+
+	static int words(String name)
+	{
+		int count = 0;
+		char ch[] = new char[name.length()];
+		
+		for(int i = 0; i<name.length(); i++)
+		{
+			ch(i)= String.charAt(i);
+				if( ((i>0) && (ch[i]!=' ') && (ch[i-1]==' ')) || ((ch[0]!=' ') && (i==0)) )
+				count++;
+		}
+		return count;
+	}
+}

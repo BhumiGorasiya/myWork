@@ -1,0 +1,57 @@
+package collaction;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+
+class Person implements Comparable<Person>
+{
+	private int age;
+	private String name;
+	private String email;
+	
+	public Person(int age, String name, String email) {
+		
+		this.age = age;
+		this.name = name;
+		this.email = email;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	@Override
+	public int compareTo(Person o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+}
+
+public class Practical_4 {
+	public static void main(String[] args) {
+		
+		ArrayList<Person> personList = new ArrayList<Person>();
+		personList.add(new Person(18, "Rahul", "rahul@gmail.com"));
+		personList.add(new Person(16, "Vinay", "vinay@gmail.com"));
+		personList.add(new Person(24, "Rima","rima@gmail.com"));
+		
+		Collections.SORT
+	
+	}
+	
+
+}

@@ -1,0 +1,19 @@
+package Practical_1;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import util.Diverconnection;
+
+public class ScrollDemo {
+	public static void main(String[] args) {
+		WebDriver driver = Diverconnection.getdriver();
+		driver.get("https://demoqa.com/automation-practice-form");
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		//WebElement element = driver.findElement(null)
+		
+	}
+
+}

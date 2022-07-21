@@ -1,0 +1,20 @@
+package collaction;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class Practical_3 {
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> numList = new ArrayList<Integer>();
+		numList.add(12);
+		numList.add(178);
+		numList.add(14);
+		numList.add(1);
+		numList.add(36);
+		
+		Collection.sort(numList);
+		Collection.sort(numList, Collection.rever)
+	}
+
+}
